@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biometric Attendance</title>
+    <script type="text/javascript" src="java.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body id="body" onload="load()">
+    <div>
+      <form name="myForm" id="form">
+        <center>
+          <fieldset id="fsetT">
+            <fieldset id="fsetB">
+              <p id="a"></p>
+              <p id="aa"></p>
+              <p id="aaa"></p>
+              <br><br>
+              <label id="labelR" for="Roll No.">Roll No.</label><br>
+              <input type="number" id="roll" name="Roll No." style="width: 100px;"><br><br>
+              <label id="labelD_min" for="datemin">From Date</label><br>
+              <input type="date" id="datemin" name="datemin" value="2020-01-02"><br><br>
+              <label id="labelD_max" for="datemax">To Date</label><br>
+              <input type="date" id="datemax" name="datemax"><br><br>
+              <a id="button1" href="javascript:go()" target="_self"><i class="material-icons" id="imag" style="font-size:60px">fingerprint</i></a>
+              <div class="lds-roller" id="loading"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <br>
+            </fieldset>
+          </fieldset>
+        </center>
+      </form>
+    </div>
+  </body>
+</html>
